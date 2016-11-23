@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from './app.css';
 
 export default class App extends Component {
 
@@ -12,7 +13,7 @@ export default class App extends Component {
   render() {
     const { initialMessage } = this.state;
     return (
-      <div>
+      <div className={styles.root}>
         {initialMessage}
       </div>
     );
